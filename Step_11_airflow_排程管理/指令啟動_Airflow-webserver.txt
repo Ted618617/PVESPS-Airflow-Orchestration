@@ -1,0 +1,4 @@
+docker compose `
+  -f Step_11_airflow_排程管理docker-compose.airflow.yml `
+  exec airflow-webserver `
+  airflow config get-value core simple_auth_manager_passwords_file

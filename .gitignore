@@ -1,0 +1,25 @@
+# Local secrets and environment settings
+.env
+**/.env
+!.env.example
+
+# Python cache and local runtime output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+**/logs/
+
+# Airflow local folders
+airflow-postgres-db-volume/
+Step_11_airflow_排程管理/logs/
+Step_11_airflow_排程管理/airflow-postgres-db-volume/
+Step_11_airflow_排程管理/config/simple_auth_manager_passwords.json
+
+# Windows metadata
+desktop.ini
+
+# Local archive / backup folder (do not publish)
+gitignore_BOX/
+Step_10_BI儀表板維護/powerbi/
+
