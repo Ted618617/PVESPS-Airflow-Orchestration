@@ -29,7 +29,8 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__CORE__DEFAULT_TIMEZONE: Asia/Taipei
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: http://airflow-webserver:8080/execution/
-    AIRFLOW__API_AUTH__JWT_SECRET: pvesps-airflow-local-dev-jwt-secret-change-me-64-plus-characters-20260804
+    # Set AIRFLOW_JWT_SECRET in the local .env; never commit the real value.
+    AIRFLOW__API_AUTH__JWT_SECRET: ${AIRFLOW_JWT_SECRET:-replace-with-a-local-64-character-secret}
     
      # Airflow 3 Simple Auth Manager    
     AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS: "admin:admin"
