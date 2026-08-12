@@ -15,4 +15,4 @@
 
 本公開版本不包含 `.env`、API key、Airflow 密碼檔、Power BI `.pbix` 與 `gitignore_BOX/` 備份。請依各步驟文件建立本機環境變數後再執行；Airflow Compose 中的 `AIRFLOW_JWT_SECRET` 也必須使用本機 `.env` 設定。
 
-詳細架構與作品說明請參閱 [`V2_README.md`](V2_README.md) 及各 Step 資料夾內的 README / SQL。
+各 Step 資料夾內提供對應的 README、操作說明與 SQL。
